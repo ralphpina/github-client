@@ -1,2 +1,3 @@
 rootProject.name = "GitHub Client"
 include ':app'
+include ':extensions:StringsExt'
