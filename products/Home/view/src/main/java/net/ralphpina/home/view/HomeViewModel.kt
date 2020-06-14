@@ -1,4 +1,4 @@
-package net.ralphpina.githubclient.ui.home
+package net.ralphpina.home.view
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

@@ -1,45 +1,22 @@
 import net.ralphpina.build.TestDeps
 import net.ralphpina.build.AndroidTestDeps
 import net.ralphpina.build.Deps
+import net.ralphpina.build.Products
 
 plugins {
     id("com.android.application")
-    kotlin("android")
-    kotlin("kapt")
-    id("kotlin-android-extensions")
+    id("net.ralphpina.build.android")
 }
 
 android {
-    compileSdkVersion(30)
-
     defaultConfig {
-        minSdkVersion(23)
-        targetSdkVersion(30)
-
         applicationId = "net.ralphpina.githubclient"
-        versionCode = 1
-        versionName = "1.0"
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    buildTypes {
-        getByName("release") {
-            isMinifyEnabled = true
-            proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
-        }
-    }
-
-    compileOptions {
-        sourceCompatibility(JavaVersion.VERSION_1_8)
-        targetCompatibility(JavaVersion.VERSION_1_8)
-    }
-
-    kotlinOptions {
-        jvmTarget = "1.8"
     }
 }
 
 dependencies {
+    api(project(Products.Home.View))
+
     implementation(kotlin("stdlib"))
     implementation(Deps.ANDROIDX_APP_COMPAT)
     implementation(Deps.ANDROIDX_CONSTRAINT_LAYOUT)
