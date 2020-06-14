@@ -49,6 +49,9 @@ captures/
 .idea/assetWizardSettings.xml
 .idea/dictionaries
 .idea/libraries
+# Code styles, maybe we add them later?
+.idea/codeStyles/Project.xml
+.idea/codeStyles/codeStyleConfig.xml
 # Android Studio 3 in .gitignore file.
 .idea/caches
 .idea/modules.xml
