@@ -19,5 +19,9 @@ dependencies {
     implementation(Deps.ANDROIDX_APP_COMPAT)
     implementation(Deps.ANDROIDX_CORE)
     implementation(Deps.ANDROIDX_LIFECYCLE_VIEWMODEL_KTX)
+
+    implementation(Deps.KOIN_CORE)
+    implementation(Deps.KOIN_ANDROIDX_VIEWMODEL)
+
     implementation(Deps.MATERIAL)
 }

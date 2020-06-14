@@ -27,6 +27,9 @@ dependencies {
     implementation(Deps.ANDROIDX_NAV_UI_KTX)
     implementation(Deps.ANDROIDX_LIFECYCLE_LIVEDATA_KTX)
     implementation(Deps.ANDROIDX_LIFECYCLE_VIEWMODEL_KTX)
+
+    implementation(Deps.KOIN_ANDROID)
+
     implementation(Deps.MATERIAL)
 
     testImplementation(TestDeps.JUNIT)
