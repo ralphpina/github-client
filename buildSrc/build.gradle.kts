@@ -8,6 +8,10 @@ gradlePlugin {
             id = "net.ralphpina.build.android"
             implementationClass = "net.ralphpina.build.AndroidBuildPlugin"
         }
+        register("JetpackComposePlugin") {
+            id = "net.ralphpina.build.jetpack.componse"
+            implementationClass = "net.ralphpina.build.JetpackComposePlugin"
+        }
     }
 }
 
